@@ -27,7 +27,8 @@ main() {
     # Check if arguments are provided
     if [ $# -ne 3 ]; then
         echo "Usage: $0 <start_time> <end_time> <interval_minutes>"
-        echo "Example: $0 21:00 07:00 30"
+        echo "Example: $0 21:00 23:59 30"
+        echo "NOTE: end time cannot exceed 23:59"
         exit 1
     fi
 

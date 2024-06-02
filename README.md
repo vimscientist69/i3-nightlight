@@ -33,10 +33,10 @@ To install Nightlight, follow these steps:
 
     Replace `start_time`, `end_time`, and `interval_minutes` with your desired values. This command ensures that Nightlight starts automatically with your i3 session.
     
-    Here is an example of a command that starts Nightlight at 8:00 PM, ends at 6:00 AM, and looks if the current time is inbetween the start and end time, every 30 minutes:
+    Here is an example of a command that starts Nightlight at 8:00 PM, ends at 23:59, and looks if the current time is inbetween the start and end time, every 30 minutes: (it will not work if the end time is above 23:59. Feel free to make a PR if you want that extra functionality)
 
     ```text
-    exec --no-startup-id nightlight 20:00 06:00 30 >/dev/null 2>&1 &
+    exec --no-startup-id nightlight 20:00 23:59 30 >/dev/null 2>&1 &
     ```
 
 5. Restart your i3 session or reload the configuration file for the changes to take effect. If you don't know how, just restart your computer by running `reboot` in your terminal.
@@ -53,7 +53,7 @@ Just run the command `nightlight` in your terminal to see the usage.
 
 ```bash
 # Example:
-nightlight 20:00 06:00 30
+nightlight 20:00 23:59 30
 ```
 
 ## Contributing
