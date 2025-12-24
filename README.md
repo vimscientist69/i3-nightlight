@@ -9,7 +9,7 @@ To install Nightlight, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/WilliamFerns1/i3-nightlight.git
+    git clone https://github.com/vimscientist69/i3-nightlight.git
     ```
 
 2. Change directory into the cloned repository:
